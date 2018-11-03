@@ -1,4 +1,4 @@
-import { cube } from "./math";
+import _ from "lodash";
 
 if (process.env.NODE_ENV !== "production") {
   console.log("Looks like we are in development mode!");
@@ -9,7 +9,8 @@ function component() {
 
   element.innerHTML = [
     "Hello webpack!",
-    "5 cubeds is equal to " + cube(5)
+    "How are you?",
+    "I am fine! Thank you!"
   ].join("\n\n");
 
   return element;
